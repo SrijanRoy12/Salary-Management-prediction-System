@@ -147,7 +147,7 @@ if uploaded_file:
 st.markdown("---")
 st.markdown(
     "<div style='text-align:center; color:gray;'>"
-    "🔧 Developed by <b> Benu Gopal Kanjilal </b> | Powered by Edunet Foundation in collaboration with IBM SkillsBuild"
+    "🔧 Developed by <b> Srijan Roy </b> | IEM, CSE KOLKATA"
     "<br>Built using <a href='https://streamlit.io' target='_blank'>Streamlit</a> 🚀"
     "</div>",
     unsafe_allow_html=True
