@@ -1,70 +1,69 @@
-# 💼 AI-Powered Salary Management System
+# 💼 Salary Management & Prediction System
 
-> Predict whether an employee earns more or less than ₹50,000/month using Machine Learning.
-
----
-
-## 📌 Project Overview
-
-This is a Streamlit-based web application that takes various demographic and employment-related inputs and uses a trained machine learning model to predict the **salary class** of an individual. The model is trained to classify whether the salary is **greater than ₹50K or less than ₹50K**.
-
-It also supports **batch predictions** via CSV upload and showcases model performance metrics interactively.
+An **AI-powered Streamlit application** for managing employee salary records and predicting future compensation trends. Designed to help HR departments and companies streamline payroll planning, benchmark salaries, and make data-driven decisions with confidence.
 
 ---
 
 ## 🚀 Features
 
-- 🎯 Predict individual salary class based on multiple inputs  
-- 🗃️ Batch prediction support using CSV upload  
-- 📊 Model performance metrics (Accuracy, Precision, Recall, F1 Score)  
-- 💡 Clean and interactive UI built with **Streamlit**  
-- 🔐 Encodes and maps inputs to match model training preprocessing  
-- 📈 Visual bar chart of prediction probabilities
+- 🔐 **Secure Authentication** – Role-based login system for Admin & HR users
+- 📊 **Interactive Dashboards** – Real-time insights into employee salary distributions
+- 📁 **Employee Data Management** – Add, update, and manage employee records
+- 📈 **Salary Prediction Engine** – ML-powered predictions based on role, experience, and location
+- 📑 **Salary Benchmarking** – Compare employee salaries against market standards
+- 🌗 **Dark/Light Mode Toggle** – Enhanced user experience with theming support
+- 📤 **Exportable Reports** – Download salary data in CSV format
 
 ---
 
-## 🧠 Technologies Used
+## 🛠️ Tech Stack
 
-- **Python**
-- **Streamlit** – for building the web interface  
-- **Pandas** – for data manipulation  
-- **NumPy** – numerical operations  
-- **Joblib** – model loading  
-- **Scikit-learn** – for model training and prediction (assumed for saved model)
-
----
-
-## 🏗️ Project Structure
-
-salary-management-system/
-│
-├── best_model.pkl # Pre-trained classification model
-├── app.py # Main Streamlit app
-├── requirements.txt # Required dependencies
-├── sample_input.csv # Sample input file for batch prediction
-└── README.md # Project documentation
-
-
+- **Frontend**: [Streamlit](https://streamlit.io/)
+- **Backend**: Python, Pandas, Scikit-learn
+- **Database**: CSV/SQLite (configurable)
+- **Machine Learning**: Regression models, clustering, and data normalization
+- **Visualization**: Streamlit Charts, Matplotlib, Seaborn
 
 ---
 
-## ⚙️ How to Run the Project
+## 📦 Installation
 
-### 🔧 Prerequisites
-
-- Python 3.7+
-- pip
-
-### 🛠️ Setup Instructions
-
-1. Clone the repository:
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/itgithubplatform/salary_management_prediction_system.git
-   cd salary-management-system
+   git clone https://github.com/SrijanRoy12/salary-prediction-suite.git
+   cd salary-prediction-suite
+Create a virtual environment & install dependencies
 
-2.Install required dependencies:
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
+Run the Streamlit app
 
-3.Run the Streamlit app:
+bash
+Copy
+Edit
 streamlit run app.py
+🧠 How It Works
+Upload or enter employee data (e.g., name, role, experience, current salary).
+
+The system processes and stores the data securely.
+
+ML models analyze patterns and predict salary based on selected parameters.
+
+Visual insights and salary comparisons are generated in real-time.
+
+📌 Future Enhancements
+📅 Appraisal & promotion tracking
+
+🧾 Tax calculation module
+
+📤 HRMS or ERP integration
+
+📧 Email notification system for salary slips
+
+🙌 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
